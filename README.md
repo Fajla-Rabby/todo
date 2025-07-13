@@ -1,14 +1,3 @@
-// types/Todo.ts
-export interface Todo {
-  id: string;
-  text: string;
-  completed: boolean;
-}
-
-// components/TodoInput.tsx
-interface TodoInputProps {
-  onAdd(todoText: string): void;
-}
 
 ```mermaid
 flowchart TD
