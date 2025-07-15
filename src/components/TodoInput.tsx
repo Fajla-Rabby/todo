@@ -10,9 +10,11 @@ export const TodoInput: React.FC<TodoInputProps> = ({ onAdd }) => {
   const [text, setText] = useState<string>('');
 
   const handleSubmit = (e: FormEvent) => {
+    
     e.preventDefault();
     if (!text.trim()) return;
-    onAdd(text.trim());
+    onAdd(text.trim()); 
+    
     setText('');
   };
 
